@@ -414,7 +414,7 @@ p {
     position: relative;
     top: 30%;
     font: center ;
-    width: 27%;
+    width: 30%;
     display: inline-block;
     padding: 1% 2%;
     font-size: 1.2rem;
@@ -422,4 +422,17 @@ p {
     font-weight: 600;
     margin-right : 5%;
   }
+
+  .copy{
+    position: absolute;
+    left: 35%;
+    top: 103%;
+    width: 25%
+
+  }
+  textarea:hover {
+    transform: scale(1.0);
+
+  }
+
 }
