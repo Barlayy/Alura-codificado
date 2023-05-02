@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <canvas id="projector">Your browser does not support the Canvas element.</canvas>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu Codificador</title>
+
+            <!-- box icon -->
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+            <!--Custom css-->
+            <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <!--Cabecalho designer-->
+        <header class="header">
+            <a href="#" class="logo">Codificador</a>
+            <i class="bx bx-menu" id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="home" style="--i:1;" class="active">Home</a>
+                <a href="codificador" style="--i:2;">Codificador</a>
+                <a href="#" style="--i:3;">Serviços</a>
+                <a href="#" style="--i:4;">Portfolio</a>
+                <a href="#" style="--i:5">Contatos</a>
+            </nav>
+        </header>
+
+        <!--Home Selection design-->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Challenge One</h3>
+                <h1>Codificador</h1>
+                <p class="maquina-escrever">Criado por <span>José Renato</span></p>
+                <div class="social-media">
+                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                </div> 
+            </div>
+        </section>
+
+        <section class="codificador" id="codificador">
+        <div>
+            <!-- Caixa de Dialogo-->
+            <div class="crypto">
+                <textarea id="message" name="message" rows="4" cols="20"></textarea>
+                <p id="result"  class="resultado"><span>Sua mensagem aparecerá aqui</span></p><button id="copyBtn" class="copy" style="display:none" onclick="copy()">Copiar</button>
+
+            </div>
+            
+            <!--Botões para a criptografia e descriptografia-->
+            <div class="-button">
+                <button onclick="encrypt()" class="btn">Criptografar</button>
+                <button onclick="decrypt()" class="btn">Descriptografar</button>
+            </div>
+        </section>
+    </body>
+    
+    <footer>
+        <ul class="social-icons">
+            <li><a href="#" class="facebook"><i class="bx bxl-facebook"></i></a></li>
+            <li><a href="#" class="twitter"><i class="bx bxl-twitter"></i></a></li>
+            <li><a href="#" class="instagram"><i class="bx bxl-instagram-alt"></i></a></li>
+            <li><a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a></li>
+        </ul>
+        <div class="copyright">
+            <p>&copy; 2023 - Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <script src="java.js"></script>
+
+    
+</html>
